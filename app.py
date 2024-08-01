@@ -14,10 +14,11 @@ from langchain_community.document_loaders import PyPDFLoader
 import os
 from langchain_community.embeddings import OllamaEmbeddings
 
-from dotenv import load_dotenv
-load_dotenv()
+##from dotenv import load_dotenv
+##load_dotenv()
 
 os.environ['HF_TOKEN']=os.getenv("HF_TOKEN")
+HF_TOKEN="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"
 embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 ####embeddings=(
    ## OllamaEmbeddings(model="gemma:2b")  ##by default it ues llama2
