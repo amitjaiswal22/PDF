@@ -17,7 +17,7 @@ from langchain_community.embeddings import OllamaEmbeddings
 ##from dotenv import load_dotenv
 ##load_dotenv()
 
-os.environ['HF_TOKEN']=os.getenv("HF_TOKEN")
+##os.environ['HF_TOKEN']=os.getenv("HF_TOKEN")
 HF_TOKEN="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"
 embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 ####embeddings=(
